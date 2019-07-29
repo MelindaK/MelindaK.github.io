@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import PostList from "../components/postlist"
-import AboutSection from "../components/about"
 import SEO from "../components/seo"
 
 import "../components/sass/index.scss"
