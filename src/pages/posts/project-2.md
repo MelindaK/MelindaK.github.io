@@ -1,7 +1,7 @@
 ---
 path: '/parenting-app'
 title: 'An Essential App for Working Parents'
-published: true
+published: false
 date: '2017-12-01'
 description: 'This is a description of this post.'
 thumbnail: '../../images/thumbnails/thumb-parenting.png'
