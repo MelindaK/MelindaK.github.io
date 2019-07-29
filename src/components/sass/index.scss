@@ -1,0 +1,449 @@
+
+/* Variables */
+
+/* Fonts */
+
+$heading-font:  Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+$body-font: 'Nunito Sans', Helvetica Neue, ariel, sans-serif;
+
+
+/* Colors */
+
+// $softblack: 	#060626;
+$softblack:		#272747;
+$darkgray:		#57565c;
+$lightgray: 	#DADAE8;
+$cinnabar: 		#E03544;
+$white: 		#FFFFFF;
+
+/* Layout */
+
+$padding-unit: 20px;
+$margin-unit: 20px;
+
+/* Breakpoints */
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm: 576px;
+
+// Small tablets (portrait view)
+$screen-md: 768px;
+
+// Tablets and small desktops
+$screen-lg: 992px;
+
+// Large tablets and desktops
+$screen-xl: 1200px;
+
+
+
+
+/* Responsiveness */
+
+@mixin respond($screen) {
+	@media (min-width: $screen) { 
+		@content ;
+	}
+}
+
+@mixin mobile-only {
+	@media (max-width: $screen-sm) { 
+		@content ;
+	}
+}
+
+
+@mixin clearfix {
+	&::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+}
+
+
+/* File imports */
+
+@import './layout_default.scss';
+
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.6rem;
+}
+h3 {
+	font-size: 1.3rem;
+	margin-top: 20px;
+}
+
+body {
+	font-family: $body-font;
+	font-size: 17px;
+}
+
+header {
+	box-sizing: border-box;
+}
+
+ul, ol {
+	@include respond($screen-sm) {
+		margin-left: 2.5rem;
+	}
+}
+
+
+
+/* Layout */
+
+.layout-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: $padding-unit;
+}
+
+
+/* Header */
+
+.site-header {
+    background: #FFF;
+    width: 100%;
+    padding-top: $padding-unit/2;
+
+	h1 {
+		font-size: 1.25rem;
+		margin-bottom: 0;
+		padding-right: $padding-unit;
+		display: inline-block;
+		a {
+			text-decoration: none;
+			color: $cinnabar;
+		}
+		.label {
+			font-size: 0.8rem;
+			color: $softblack;
+			// padding-left: 10px;
+		}
+	}
+
+	p {
+		margin-top: 2px;
+		float: right;
+	}
+
+	* {
+		margin-bottom: 0 !important;
+	}
+}
+
+
+/* Grid */
+
+.grid {
+	@include respond($screen-sm) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.flex-item-large {
+			flex-grow: 2;
+		}
+		.flex-item-small {
+			 flex-grow: 0.85;
+			 padding-left: 20px;
+		}
+	}
+
+	@include mobile-only {
+		.flex-item-small {
+			width: 50%;
+			margin: 0 auto;	
+		}
+
+	}
+
+	&.image-grid {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+
+	.grid-item {
+		&:nth-of-type(1) {
+			padding-right: 20px;
+		}
+		// &:nth-of-type(2) {
+		// 	padding-left: 10px;
+		// }
+	}
+
+
+}
+
+.one-fourth {
+	width: 50%;
+	margin: 0 auto;
+	@include respond($screen-md) {
+		width: 25%;
+	}
+}
+
+.one-third {
+	width: 50%;
+	margin: 0 auto;
+	@include respond($screen-md) {
+		width: 34%;
+	}
+}
+
+.one-half {
+	width: 100%;
+	@include respond($screen-md) {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+.two-thirds {
+	width: 100%;
+	@include respond($screen-md) {
+		width: 66%;
+	}
+}
+
+.three-fourths {
+	width: 100%;
+	@include respond($screen-md) {
+		width: 75%;
+	}
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right {
+	@include respond($screen-md) {
+		float: right;
+		padding-left: 20px;
+	}
+}
+.left {
+	@include respond($screen-md) {
+	float: left;
+	padding-right: 20px;
+	}
+}
+
+
+
+/* Intro & Outro */
+
+.section-intro {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+	max-width: 580px;
+
+	p {
+		line-height: 1.6;
+	}
+}
+
+.section-outro {
+	text-align: center;
+}
+
+
+
+/* Post Gallery */
+
+article {
+	box-sizing: border-box;
+}
+
+.section-bleed-bg {
+	position: relative;
+	&:before {
+		content: "";
+		background-color: #fafbff;
+		background-color: #f5f6fa;
+
+		height: 80%;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 10%;
+		position: absolute;
+		z-index: -1;
+		// background: rgb(255,255,255);
+		// background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,251,255,1) 5%, rgba(254,254,255,1) 95%, rgba(255,255,255,1) 100%);
+	}
+}
+
+.post-list {
+	@include respond($screen-md) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+// Item
+.post-item-container {
+	margin-bottom: $margin-unit*2;
+	border: 1px solid $softblack;
+	background-color: $white;
+	transition: 300ms;
+
+	&:nth-of-type(1) {
+		.post-thumbnail {
+			background-color: #FFE052;
+			transition: 1000ms;
+		}
+	}
+	&:nth-of-type(2) {
+		.post-thumbnail {
+			background-color: #02C5A2;
+		}
+	}
+	&:nth-of-type(3) {
+		.post-thumbnail {
+			background-color: #963AEE;
+		}
+	}
+	&:nth-of-type(4) {
+		.post-thumbnail {
+			background-color: $cinnabar;
+		}
+	}
+
+
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+		// &:nth-of-type(1) {
+		// 	.post-thumbnail:after {
+		// 		content: "";
+		// 		position: absolute;
+		// 		background-image: url('../../images/notices/notices-crazy8.jpg');
+		// 		background-size: cover;
+		// 		top: 0;
+		// 		left: 0;
+		// 		right: 0;
+		// 		bottom: 0;
+
+		// 	}
+		// }
+
+	};
+
+	@include respond($screen-md) {
+		width: 48%;
+	}
+}
+
+
+//Content
+.post-item {
+	position: relative;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+
+	
+	.post-thumbnail {
+		height: 260px;
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+	.post-content {
+		display: block;
+		padding: $padding-unit*2 $padding-unit;
+		border-top: 1px solid #efefef;
+		text-align: center;
+		background-color: $white;
+
+
+		>:last-child {
+			margin-bottom: 0;
+		};
+	}
+}
+
+
+.post-page {
+	.project-nav {
+		position: absolute;
+		font-size: 70%;
+		left: 0;
+
+		ul {
+			list-style: none;
+		}
+	}
+	img {
+		border: 10px solid #eee;
+		  // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
+	}
+
+	h1 {
+		background-color: white;
+			text-align: center;
+	}
+
+	h2, h3 {
+		padding-top: 0.75em;
+	}
+
+	h3 {
+		color: $darkgray;
+		// text-transform: uppercase;
+	}
+
+	.hero-image {
+		overflow: hidden;
+		position: relative;
+		height: 12rem;
+		margin-top: -2rem;
+		z-index: -2;
+		img {
+			border: none;
+		}
+	}
+
+	.gif-wrapper {
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+}
+
+.image-me {
+	max-width: 240px;
+	margin: 0 auto
+}
+
+footer {
+	text-align: center;
+	padding-bottom: $margin-unit*2;
+	font-size: 0.8em;
+}
+
+
+/* If you ever want to use Bulma */
+
+
+// @import "~bulma/sass/utilities/initial-variables.sass";
+// @import "~bulma/sass/utilities/functions.sass";
+// @import "~bulma/sass/utilities/derived-variables.sass";
+// @import "~bulma/bulma.sass";
+

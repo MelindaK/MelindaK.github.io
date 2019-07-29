@@ -2,43 +2,73 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Colors from "./colors.js"
+import styled from 'styled-components';
+
+import "./sass/index.scss"
+
+
+
+const NavLink = styled.p`
+  display: inline-block;
+  padding-left: 40px;
+
+  &:last-of-type {
+    padding-left: 0;
+  }
+
+  a {
+    color: ${Colors.softblack};
+    text-decoration: none;
+    position: relative;
+    transition: 100ms;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: ${Colors.cinnabar};
+      transition: 100ms;
+    }
+
+    &:hover {
+      color: ${Colors.cinnabar};
+      text-decoration: none;
+      &:after {
+        width: 100%
+      }
+    }
+  }  
+`
+
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <p>
+  <header className="site-header">
+    <div className="layout-container">
+        <h1>
+          <Link to="/"
+          >
+            {siteTitle} 
+            <br/><span className="label">Product Designer</span>
+          </Link>
+        </h1>
+      <NavLink>
         <Link
           to="/about/"
-          style={{
-            color: `white`,
-            textDecoration: `underline`,
-            float: `right`,
-          }}
         >
           About
         </Link>
-      </p>
+      </NavLink>
+      <NavLink>
+        <Link
+          to="/#projects"
+        >
+          Projects
+        </Link>
+      </NavLink>
     </div>
   </header>
 )

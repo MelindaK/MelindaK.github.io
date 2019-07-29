@@ -1,6 +1,7 @@
 import React from "react"
 // import Helmet from "react-helmet"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
 export default function Template({
 	data,
@@ -8,15 +9,25 @@ export default function Template({
 	const { markdownRemark: post } = data;
 	// const post = data.markdownRemark;
 	return (
-		<div>
+		
+		<Layout>
+		<div className="post-page content" style={{
+			margin: `0 auto`,
+        	maxWidth: 800,
+        	padding: `1.45rem 1.0875rem`,
+		}}>
 			<h1>{post.frontmatter.title}</h1>
+		
 			<div dangerouslySetInnerHTML ={{__html: post.html}} />
 		</div>
+		</Layout>
+		
+		
 	)
 }
 
 export const postQuery = graphql`
-	query BlogPostByPath($path: String!) {
+	query PostByPath($path: String!) {
 		markdownRemark(frontmatter: { path: { eq: $path } }) {
 			html
 			frontmatter {
