@@ -18,6 +18,45 @@ $lightgray: 	#DADAE8;
 $cinnabar: 		#E03544;
 $white: 		#FFFFFF;
 
+
+
+//Palette #1
+// $color1: 		#FFE052;
+// $color2: 		#02C5A2;
+// $color3: 		#813eed;
+// $color4: 		$cinnabar;
+
+
+//Palette #2
+// $color1: 		#7ecfc0;
+// $color2: 		#ec8f6a;
+// $color3: 		#f2e3c9;
+// $color4: 		#ef4b4b;
+
+// $color1: 		#35477d;
+// $color2: 		#6c5b7b;
+// $color3: 		#c06c84;
+// $color4: 		#f67280;
+
+
+//Palette #3
+$color1: 		#bfd8d5;
+$color2: 		#dfdfdf;
+$color3: 		#f4f3f3;
+$color4: 		#b1bed5;
+
+
+//Palette #4
+// $color1: 		#ffc5a1;
+// $color2: 		#fff8a6;
+// $color3: 		#b0deff;
+// $color4: 		#ffd19a;
+
+$border-color: 	$lightgray;
+
+
+
+
 /* Layout */
 
 $padding-unit: 20px;
@@ -300,29 +339,32 @@ article {
 // Item
 .post-item-container {
 	margin-bottom: $margin-unit*2;
-	border: 1px solid $softblack;
+	border: 1px solid $border-color;
 	background-color: $white;
 	transition: 300ms;
 
 	&:nth-of-type(1) {
 		.post-thumbnail {
-			background-color: #FFE052;
+			background-color: $color1;
 			transition: 1000ms;
 		}
 	}
 	&:nth-of-type(2) {
 		.post-thumbnail {
-			background-color: #02C5A2;
+			background-color: $color2;
+			transition: 1000ms;
 		}
 	}
 	&:nth-of-type(3) {
 		.post-thumbnail {
-			background-color: #963AEE;
+			background-color: $color3;
+			transition: 1000ms;
 		}
 	}
 	&:nth-of-type(4) {
 		.post-thumbnail {
-			background-color: $cinnabar;
+			background-color: $color4;
+			transition: 1000ms;
 		}
 	}
 
@@ -330,19 +372,9 @@ article {
 	&:hover {
 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-		// &:nth-of-type(1) {
-		// 	.post-thumbnail:after {
-		// 		content: "";
-		// 		position: absolute;
-		// 		background-image: url('../../images/notices/notices-crazy8.jpg');
-		// 		background-size: cover;
-		// 		top: 0;
-		// 		left: 0;
-		// 		right: 0;
-		// 		bottom: 0;
-
-		// 	}
-		// }
+		.post-thumbnail {
+			background-color: $softblack !important;
+		}
 
 	};
 
@@ -425,6 +457,29 @@ article {
 		margin: 0 auto;
 	}
 
+}
+
+.about-page {
+	.image-wrapper {
+		margin: 0 auto $margin-unit auto;
+		width: 60%;
+	}
+
+	h4 {
+		text-align: center
+	}
+
+	@include respond($screen-sm) {
+		.image-wrapper {
+			width: 50%;
+			float: left;
+		}
+
+		h4 {
+			margin-top: 30%;
+		}
+
+	}
 }
 
 .image-me {

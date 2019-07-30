@@ -59,7 +59,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/about/"
         >
-          About
+          About Me
         </Link>
       </NavLink>
       <NavLink>
