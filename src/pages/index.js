@@ -13,7 +13,7 @@ const IndexPage = () => (
     <div className="layout-container ">
     <section className="section-intro">
       <h1 className="title">Hello!</h1>
-	    <p>I’m Melinda, a product designer living in San Francisco. I’ve worked extensively in user experience design and front-end web development and I find my groove anywhere I can dig into hard problems, make people’s lives a tiny bit easer, and learn something new every day. Feel free to check out some of my projects below.</p>
+	    <p>I’m Melinda, a product designer living in San Francisco. I’ve worked extensively in user experience design and front-end web development and I find my groove anywhere I can dig into hard problems, help make people’s lives a tiny bit easier, and continue learning. Feel free to check out some of my projects below.</p>
     </section>
     </div>
     <section id="projects" className="section-bleed-bg">
