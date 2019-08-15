@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProfileImage from "../components/profile"
+import BannerImage from "../components/banner"
 
 import "../components/sass/index.scss"
 
@@ -12,7 +13,7 @@ const About = ({ data }) => (
   <Layout>
   <SEO title="About me" />
   <div class="banner">
-  <Img fluid={data.file.childImageSharp.fluid} title="Colorful soaps in Aix" alt="Colorful soaps display in Aix" />
+    <BannerImage></BannerImage>  
   </div>
   <div className="layout-container about-page">
       <section className="section-profile">
@@ -35,7 +36,7 @@ const About = ({ data }) => (
             <blockquote>
               <p>“Melinda is generally recognized as one of the most competent, informed, and thoughtful people on the UX team, if not the broader company. People mention her ability to juggle multiple responsibilities, being proactive and helpful wherever possible, and tailoring her solutions to meet real and specific needs based on feedback and compromise.”</p>
                 <br/>
-                <span class="attribute">360 feedback summary 2019</span>
+                <span className="attribute">360 feedback summary 2019</span>
             </blockquote>
             </section>
             <section className="section-quote">
@@ -43,14 +44,14 @@ const About = ({ data }) => (
             <p>
             “Melinda delivers top quality work at every turn. For years she has truly delighted our customers by designing (and uplifting) their templates and building custom demos and content samples, and now she is bringing her same stellar design sense to our platform in her role on the Product Design team. Melinda's quality work extends far beyond her technical and visual design skills, though. She is able to eloquently communicate to customers and colleagues alike the factors that drive her design decisions, sharing the content and design best practices employed in her work, and is able to break down technical concepts, limitations/<wbr/>constraints, and bugs in non-technical terms (or stay in the technical weeds when her audience can keep up!). And, she handles herself with total professionalism and integrity in every work interaction (both internally and externally). There are few people who can serve as a better face of Inkling when in front of customer teams.” </p>
                 <br/>
-                <span class="attribute">Otto Award Nomination</span>
+                <span className="attribute">Otto Award Nomination</span>
             </blockquote>
             </section>
             <section className="section-quote">
             <blockquote>
             <p>“Melinda, you rock!” </p>
               <br/>
-              <span class="attribute">Tom @ Chick-fil-A</span>
+              <span className="attribute">Tom @ Chick-fil-A</span>
             </blockquote>
             </section>
 
@@ -62,17 +63,17 @@ const About = ({ data }) => (
 
 
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "about/soap.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000, maxHeight: 280) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     file(relativePath: { eq: "about/soap.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 2000, maxHeight: 280) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
 
 
 // Fragments caused Netlify deploy to fail
