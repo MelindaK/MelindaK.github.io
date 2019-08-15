@@ -17,7 +17,7 @@ const About = ({ data }) => (
   <div className="layout-container about-page">
       <section className="section-profile">
           <div className="image-profile">
-            <ProfileImage></ProfileImage>  
+          
           </div>
       </section>
         <div className="content">
@@ -87,6 +87,5 @@ export const query = graphql`
     }
   }
 `
-
 
 export default About
