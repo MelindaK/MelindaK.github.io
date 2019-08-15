@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProfileImage from "../components/profile"
-import BannerImage from "../components/banner"
 
 import "../components/sass/index.scss"
 
@@ -13,7 +12,6 @@ const About = ({ data }) => (
   <Layout>
   <SEO title="About me" />
   <div class="banner">
-    <BannerImage></BannerImage>  
   </div>
   <div className="layout-container about-page">
       <section className="section-profile">
@@ -61,19 +59,6 @@ const About = ({ data }) => (
   </Layout>
 )
 
-
-
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "about/soap.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 2000, maxHeight: 280) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
 
 
 // Fragments caused Netlify deploy to fail
