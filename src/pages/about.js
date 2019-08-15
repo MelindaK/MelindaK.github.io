@@ -11,8 +11,7 @@ import "../components/sass/index.scss"
 const About = ({ data }) => (
   <Layout>
   <SEO title="About me" />
-  <div class="banner">
-  </div>
+    <Img fluid={data.image4.childImageSharp.fluid} title="Colorful soaps in Aix" alt="Colorful soaps display in Aix" />
   <div className="layout-container about-page">
       <section className="section-profile">
           <div className="image-profile">
@@ -63,32 +62,32 @@ const About = ({ data }) => (
 
 // Fragments caused Netlify deploy to fail
 
-// export const aboutImage = graphql`
-//   fragment aboutImage on File {
-//     childImageSharp {
-//       fluid(maxWidth: 2000, maxHeight: 300) {
-//         ...GatsbyImageSharpFluid
-//       }
-//     }
-//   }
-// `
+export const aboutImage = graphql`
+  fragment aboutImage on File {
+    childImageSharp {
+      fluid(maxWidth: 2000, maxHeight: 300) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
 
-// export const query = graphql`
-//   query {
-//     image1: file(relativePath: { eq: "about/tulum-coffee.jpg" }) {
-//       ...aboutImage
-//     }
-//     image2: file(relativePath: { eq: "about/bread.jpg" }) {
-//       ...aboutImage
-//     }
-//     image3: file(relativePath: { eq: "about/catflowerbox.jpg" }) {
-//       ...aboutImage
-//     }
-//     image4: file(relativePath: { eq: "about/soap.jpg" }) {
-//       ...aboutImage
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    image1: file(relativePath: { eq: "about/tulum-coffee.jpg" }) {
+      ...aboutImage
+    }
+    image2: file(relativePath: { eq: "about/bread.jpg" }) {
+      ...aboutImage
+    }
+    image3: file(relativePath: { eq: "about/catflowerbox.jpg" }) {
+      ...aboutImage
+    }
+    image4: file(relativePath: { eq: "about/soap.jpg" }) {
+      ...aboutImage
+    }
+  }
+`
 
 
 export default About

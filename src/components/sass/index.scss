@@ -532,7 +532,7 @@ article {
 // }
 
 .section-quote {
-	padding: $padding-unit*2;
+	padding: $padding-unit*2.5;
 	margin-bottom: $margin-unit/2;
 	&:nth-of-type(1) {
 		background-color: $color1;
@@ -547,9 +547,14 @@ article {
 	> :last-child {
 		margin-bottom: 0 !important;
 	}
+
+	@include mobile-only {
+		padding: $padding-unit;
+	}
 }
 
 blockquote {
+	margin: 0;
 	p { 
 		font-family: $font-serif;
 		font-size: 1.1em;
