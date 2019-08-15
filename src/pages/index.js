@@ -1,5 +1,6 @@
 import React from "react"
 
+
 import Layout from "../components/layout"
 import Image from "../components/image"
 import PostList from "../components/postlist"
@@ -31,5 +32,24 @@ const IndexPage = () => (
     </footer>
   </Layout>
 )
+
+
+// export const bannerImage = graphql`
+//   fragment bannerImage on File {
+//     childImageSharp {
+//       fluid(maxWidth: 2000, maxHeight: 200) {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// `
+
+// export const queryBanner = graphql`
+//   query {
+//     banner: file(relativePath: { eq: "ocean.jpg" }) {
+//       ...bannerImage
+//     }
+//   }
+// `
 
 export default IndexPage

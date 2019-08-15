@@ -17,7 +17,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Montserrat', 'Nunito Sans']
+          families: ['Montserrat', 'Nunito Sans', 'Lora']
         }
       }
     },
@@ -51,6 +51,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-use-dark-mode',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

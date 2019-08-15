@@ -46,7 +46,7 @@ const PostList = (props) => (
 		    <article className="post-item">
 		    
 		    	<div className="post-thumbnail"> 
-		    		<Img fluid={post.node.frontmatter.thumbnail.childImageSharp.fluid}/>
+		    		<Img fluid={post.node.frontmatter.thumbnail.childImageSharp.fluid} alt={post.node.frontmatter.title} />
 		    	</div>
 		    	<div className="post-content">
 			    	<h4 class="title is-4">{post.node.frontmatter.title}</h4>
