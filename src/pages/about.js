@@ -60,12 +60,11 @@ const About = ({ data }) => (
 
 
 
-// Fragments caused Netlify deploy to fail
 
 export const aboutImage = graphql`
   fragment aboutImage on File {
     childImageSharp {
-      fluid(maxWidth: 2000, maxHeight: 300) {
+      fluid(maxWidth: 3000, maxHeight: 420) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -83,7 +82,7 @@ export const query = graphql`
     image3: file(relativePath: { eq: "about/catflowerbox.jpg" }) {
       ...aboutImage
     }
-    image4: file(relativePath: { eq: "about/soap.jpg" }) {
+    image4: file(relativePath: { eq: "about/soaps.jpg" }) {
       ...aboutImage
     }
   }
