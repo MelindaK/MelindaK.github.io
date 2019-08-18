@@ -21,10 +21,13 @@ const IndexPage = () => (
   	    <PostList></PostList>
     </section>    
     
-    <section className="section-outro layout-container">Thanks for visiting!</section>
+    
+    
+    <section className="section-outro layout-container">
     <div className="image-me">
       <Image></Image>
     </div>
+    <p className="text-large">Thanks for visiting!</p></section>
     <footer>
             © {new Date().getFullYear()}, Built with
             {` `}

@@ -28,7 +28,7 @@ const About = ({ data }) => (
         </div>
         <div className="content">
           <h3>Aw, shucks <span role="img" aria-label="happy face">😊</span></h3>
-          <p>Honestly, nothing makes work more rewarding than knowing I've positively impacted others. Some very kind people have said some really nice things about me, so I'm sharing some of that here:</p>
+          <p>Nothing makes work more rewarding than knowing I've positively impacted others. Some very kind people have said some nice things about me, so I'm sharing some of that here:</p>
           <section className="section-quote">
             <blockquote>
               <p>“Melinda is generally recognized as one of the most competent, informed, and thoughtful people on the UX team, if not the broader company. People mention her ability to juggle multiple responsibilities, being proactive and helpful wherever possible, and tailoring her solutions to meet real and specific needs based on feedback and compromise.”</p>

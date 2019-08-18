@@ -24,6 +24,7 @@ thumbnail: '../../images/thumbnails/thumb-notices.png'
 
 </div>
 
+<p class="text-center"><a href="#final-p3" class="btn-jump">Jump to final designs</a></p>
 
 ## Background
 
@@ -39,9 +40,9 @@ At the time, the product provided no way for users to easily understand what con
 
 ## Discovery & Ideation
 
-<div class="one-half right">
+<div class="image-wrapper border-thick one-half right">
 
-![brainstorming](../../images/notices/notices-crazy8.jpg)
+![Sketches](../../images/notices/notices-crazy8.jpg)
 
 </div>
 
@@ -60,18 +61,25 @@ Providing a central place for authors to create and track content updated notice
 
 ## User Testing
 
-We ran user testing sessions with prototypes for a library notification experience and "notice" authoring experience with both novices and existing Inkling users. These were a few key takeaways: 
+I ran user testing sessions with prototypes for a library notification experience and "notice" authoring experience with both novices and existing Inkling users. These were a few key takeaways: 
 
-1. We quickly learned that it was best to stick with common notification center patterns. Users easily recognized a badged bell icon, but were less sure when seeing something like a bullhorn or directly badged documents. 
-2. We initially intended to restrict the text input for notice authors as we theorized that push notifications would be a frequent way users would link to the updated content. However this led to frustration from authors who hoped to add more context around the importance an update.
+1. I quickly learned that it was best to stick with common notification center patterns. Users easily recognized a badged bell icon, but were less sure when seeing something like a bullhorn or directly badged documents. 
+2. I initially intended to restrict the text input for notice authors as we theorized that push notifications would be a frequent way users would link to the updated content. However this led to frustration from authors who hoped to add more context around the importance an update.
 3. Our language around the "Revoke" action (a way to remove a notice from users' view) felt aggressive and scary to authors. We opted to change the action to "Expire" and to provide a default expiration window.
+
+<div class="image-wrapper max-600 border-thin">
 
 ![Notice Authoring V1](../../images/notices/notice-authoring-v1.png)
 
+</div>
+<div class="image-wrapper max-600">
+
 ![Notices Mobile V1](../../images/notices/mobile-notices-v1.png)
 
+</div>
 
-## Final designs
+
+<h2 id="final-p3">Final designs</h2>
 
 ### End-user experience
 
@@ -81,7 +89,11 @@ The detail view gave the author a place to provide context on the relevance of t
 
 The notices feature was released across desktop & mobile and our iOS and Android apps.
 
-![Inking Notices](../../images/notices/inkling-notices-reader.png)
+<div class="image-wrapper border-thin max-600">
+
+![Inking Notices Desktop](../../images/notices/inkling-notices-reader.png)
+
+</div>
 
 <!-- ![Notices Mobile](../../images/notices/mobile-notices.png) -->
 
@@ -93,17 +105,25 @@ On the notice creation side, I chose to separate each required input into a disc
 2. Select the Inkling document page link
 3. Set the distribution rules for the notice
 
+<div class="image-wrapper max-600 border-thin">
+
 ![Notices Authoring](../../images/notices/author-title-message.png)
+
+</div>
 
 The document selection interface, where an author can choose from a list of published content and select a specific page link, was a brand new element in our platform and once that has now been leveraged in additional features. 
 
-![Notices Authoring](../../images/notices/document-select.png)
+<div class="image-wrapper max-600 border-thin">
+
+![Linking a Document](../../images/notices/document-select.png)
+
+</div>
 
 A key design of authoring experience was the notice preview. Given a author's ability to send out notices across the organization, it felt essential to give them insight into exactly what users would be seeing. A preview had the added benefit of helping authors compose content of the appropriate length as they could see where their message would eventually truncate.
 
-<div class="gif-wrapper">
+<div class="image-wrapper max-600 border-thin">
 
-![Notices Live Preview](../../images/notices/notice-authoring.gif)
+![Live Preview](../../images/notices/notice-authoring.gif)
 
 </div>
 
@@ -112,7 +132,11 @@ A key design of authoring experience was the notice preview. Given a author's ab
 
 The notices dashboard in the authoring environment aim to provide a centralized view of notices across the organization. Authors can create new notices, manage drafts, and get quick insights into how many people have viewed each communication. From the detail view, authors have the ability to expire sent notices that have errors or are no longer relevant.
 
-![Notification Center](../../images/notices/dashboard.png)
+<div class="image-wrapper max-600 border-thin">
+
+![Notices Dashboard (Authoring)](../../images/notices/dashboard.png)
+
+</div>
 
 
 ## Feedback & Next Steps
