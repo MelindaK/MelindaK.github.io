@@ -11,11 +11,7 @@ export default function Template({
 	return (
 		
 		<Layout>
-		<div className="post-page content" style={{
-			margin: `0 auto`,
-        	maxWidth: 800,
-        	padding: `1.45rem 1.0875rem`,
-		}}>
+		<div className="post-page content">
 			<h1>{post.frontmatter.title}</h1>
 		
 			<div dangerouslySetInnerHTML ={{__html: post.html}} />
