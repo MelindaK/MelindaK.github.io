@@ -1,0 +1,176 @@
+
+/* Components */
+
+
+/* Header */
+
+.site-header {
+    background: #FFF;
+    width: 100%;
+    padding-top: $padding-unit/2;
+
+	h1 {
+		font-size: 1.25rem;
+		margin-bottom: 0;
+		padding-right: $padding-unit;
+		display: inline-block;
+		a {
+			text-decoration: none;
+			color: $cinnabar;
+		}
+		.label {
+			font-size: 0.8rem;
+			color: $softblack;
+			// padding-left: 10px;
+		}
+	}
+
+	p {
+		margin-top: 2px;
+		float: right;
+	}
+
+	* {
+		margin-bottom: 0 !important;
+	}
+}
+
+
+
+/* Intro & Outro */
+
+.section-intro {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+	max-width: 580px;
+
+	p {
+		line-height: 1.6;
+	}
+}
+
+.section-outro {
+	margin-top: $margin-unit*2;
+	text-align: center;
+}
+
+
+.section-bleed-bg {
+	position: relative;
+	&:before {
+		content: "";
+		background-color: #fafbff;
+		background-color: #f5f6fa;
+
+		height: 80%;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 10%;
+		position: absolute;
+		z-index: -1;
+		// background: rgb(255,255,255);
+		// background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,251,255,1) 5%, rgba(254,254,255,1) 95%, rgba(255,255,255,1) 100%);
+	}
+}
+
+
+
+/* Post Gallery */
+
+
+.post-list {
+	@include respond($screen-md) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+
+.post-item-container {
+	margin-bottom: $margin-unit*2;
+	border: 1px solid $border-color;
+	background-color: $white;
+	transition: 300ms;
+	box-shadow: 0 37.125px 70px -10.125px rgba(0,0,0,0.1);
+
+	&:nth-of-type(1) {
+		.post-thumbnail {
+			background-color: $color1;
+			transition: 1000ms;
+		}
+	}
+	&:nth-of-type(2) {
+		.post-thumbnail {
+			background-color: $color2;
+			transition: 1000ms;
+		}
+	}
+	&:nth-of-type(3) {
+		.post-thumbnail {
+			background-color: $color3;
+			transition: 1000ms;
+		}
+	}
+	&:nth-of-type(4) {
+		.post-thumbnail {
+			background-color: $color4;
+			transition: 1000ms;
+		}
+	}
+
+
+	&:hover {
+
+		// box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+		.post-thumbnail {
+			background-color: $softblack !important;
+		}
+
+	};
+
+	@include respond($screen-md) {
+		width: 48%;
+	}
+}
+
+
+
+/* Post Tile */
+
+.post-item {
+	position: relative;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+
+	
+	.post-thumbnail {
+		height: 260px;
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+	.post-content {
+		display: block;
+		padding: $padding-unit*2 $padding-unit;
+		border-top: 1px solid #efefef;
+		text-align: center;
+		background-color: $white;
+
+
+		>:last-child {
+			margin-bottom: 0;
+		};
+	}
+}
+
+
+/* MK Cartoon */
+
+.image-me {
+	max-width: 220px;
+	margin: 0 auto
+}

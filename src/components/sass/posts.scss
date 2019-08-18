@@ -1,0 +1,134 @@
+
+/* Post Page Styles */
+
+
+.post-page {
+	margin: 0 auto;
+    max-width: 800px;
+    padding: 1.45rem 1.0875rem;
+
+
+    @include respond($screen-xl) {
+    	max-width: 900px;
+    }
+
+
+
+	.project-nav {
+		position: absolute;
+		font-size: 70%;
+		left: 0;
+
+		ul {
+			list-style: none;
+		}
+	}
+
+
+	h1 {
+		background-color: white;
+			text-align: center;
+	}
+
+	h2, h3 {
+		padding-top: 0.75em;
+	}
+
+	h3 {
+		color: $darkgray;
+		// text-transform: uppercase;
+	}
+
+	.hero-image {
+		overflow: hidden;
+		position: relative;
+		height: 18rem;
+		margin-top: -2rem;
+		margin-bottom: 1rem;
+		z-index: -2;
+		img {
+			border: none;
+		}
+
+		@include respond($screen-sm) {
+			margin-top: -4rem;
+		}
+	}
+
+	.btn-jump {
+		padding: 8px 30px;
+		border-radius: 20px;
+		
+		background-color: white;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		display: inline-block;
+		text-align: center;
+		margin-top: $margin-unit*2;
+		font-size: 0.9em;
+		font-weight: 400;
+		transition: 300ms;
+		color: $softblack;
+		text-decoration: none;
+
+		&:hover {
+			background-color: $color3;
+		}
+	}
+
+
+	.image-wrapper {
+		margin: 0 auto;
+
+		&.border-thin {
+			img {
+				border: 1px solid #eee;
+			}
+		}
+
+		&.border-thick {
+			img {
+				border: 10px solid #eee;
+			}
+		}
+
+		&.max-600 {
+			max-width: 600px;
+
+			@include respond($screen-xl) {
+				max-width: 720px;
+			}
+		}
+		&.max-400 {
+			max-width: 400px;
+
+			@include respond($screen-xl) {
+				max-width: 480px;
+			}
+		}
+
+		&.max-300 {
+			max-width: 300px;
+
+			@include respond($screen-xl) {
+				max-width: 320px;
+			}
+		}
+
+	}
+
+	.gif-wrapper {
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+	aside {
+		padding: $padding-unit $padding-unit*2;
+		background-color: $color1;
+		margin: 0 auto $margin-unit auto;
+		>:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+}
+

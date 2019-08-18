@@ -1,0 +1,56 @@
+
+/* About Page Styles */
+
+.about-page {
+
+	max-width: 680px;
+	margin: 0 auto;
+
+	.image-profile {
+		margin: $margin-unit auto $margin-unit*2 auto;
+		max-width: 180px;
+	}
+
+	.content {
+		margin-bottom: $margin-unit*2;
+		position: relative;
+		> :last-child {
+			margin-bottom: $margin-unit*2;
+		}
+		&:after {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: $color1;
+			margin: 0 auto;
+			margin-top: $margin-unit;
+		}
+	}
+}
+
+
+.section-quote {
+	padding: $padding-unit*2.5;
+	margin-bottom: $margin-unit/2;
+	&:nth-of-type(1) {
+		background-color: $color1;
+	}
+	&:nth-of-type(2) {
+		background-color: $color3;
+	}
+	&:nth-of-type(3) {
+		background-color: $color4;
+	}
+
+	> :last-child {
+		margin-bottom: 0 !important;
+	}
+
+	@include mobile-only {
+		padding: $padding-unit;
+	}
+}
+
+
+

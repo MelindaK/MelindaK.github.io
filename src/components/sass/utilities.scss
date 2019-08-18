@@ -1,0 +1,104 @@
+
+/* Variables */
+
+/* Fonts */
+
+$heading-font:  Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+$body-font: 'Nunito Sans', Helvetica Neue, ariel, sans-serif;
+
+$font-serif: 'Lora', Georgia, serif;
+
+
+/* Colors */
+
+// $softblack: 	#060626;
+$softblack:		#272747;
+$darkgray:		#57565c;
+$lightgray: 	#DADAE8;
+$cinnabar: 		#E03544;
+$white: 		#FFFFFF;
+
+//Palette #1
+$color1: 		#bfd8d5;
+$color2: 		#dfdfdf;
+$color3: 		#f4f3f3;
+$color4: 		#b1bed5;
+
+
+$border-color: 	$lightgray;
+
+
+//Palette #2
+// $color1: 		#FFE052;
+// $color2: 		#02C5A2;
+// $color3: 		#813eed;
+// $color4: 		$cinnabar;
+
+
+//Palette #3
+// $color1: 		#7ecfc0;
+// $color2: 		#ec8f6a;
+// $color3: 		#f2e3c9;
+// $color4: 		#ef4b4b;
+
+//Palette #4
+// $color1: 		#ffc5a1;
+// $color2: 		#fff8a6;
+// $color3: 		#b0deff;
+// $color4: 		#ffd19a;
+
+
+
+/* Layout */
+
+$layout-width: 960px;
+
+$layout-width-lg: 1200px;
+
+$padding-unit: 20px;
+$margin-unit: 20px;
+
+
+/* Breakpoints */
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm: 576px;
+
+// Small tablets (portrait view)
+$screen-md: 768px;
+
+// Tablets and small desktops
+$screen-lg: 992px;
+
+// Large tablets and desktops
+$screen-xl: 1280px;
+
+
+
+/* Responsiveness */
+
+@mixin respond($screen) {
+	@media (min-width: $screen) { 
+		@content ;
+	}
+}
+
+@mixin mobile-only {
+	@media (max-width: $screen-sm) { 
+		@content ;
+	}
+}
+
+
+@mixin clearfix {
+	&::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+}
+
+
+
