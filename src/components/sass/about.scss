@@ -1,8 +1,7 @@
 
 /* About Page Styles */
 
-.about-page {
-
+.about-page { 
 	max-width: 680px;
 	margin: 0 auto;
 
@@ -52,5 +51,9 @@
 	}
 }
 
-
+.banner {
+	@include mobile-only {
+		display: none;
+	}
+}
 

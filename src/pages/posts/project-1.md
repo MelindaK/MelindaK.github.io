@@ -10,9 +10,9 @@ thumbnail: '../../images/thumbnails/thumb-content-logos.png'
 
 For over 4 years I worked with some of the world's leading brands to design their digital content and develop customized authoring templates for their training and reference materials. Much of this work is under NDA, but please reach out if you'd like to know more about the development process.
 
-<div>
+<div class="image-wrapper max-600 border-thick">
 
-![Brand Logos](../../images/cs/content-logos-horiz.png)
+![Brand Logos](../../images/cs/content-logos-horiz.png " ")
 
 </div> 
 

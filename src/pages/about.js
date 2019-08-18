@@ -11,7 +11,9 @@ import "../components/sass/index.scss"
 const About = ({ data }) => (
   <Layout>
   <SEO title="About me" />
+  <div className="banner">
     <Img fluid={data.image4.childImageSharp.fluid} title="Colorful soaps in Aix" alt="Colorful soaps display in Aix" />
+  </div>
   <div className="layout-container about-page">
       <section className="section-profile">
           <div className="image-profile">
