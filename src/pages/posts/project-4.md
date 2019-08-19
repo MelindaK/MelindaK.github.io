@@ -9,7 +9,7 @@ thumbnail: '../../images/thumbnails/thumb-nht-manager.png'
 
 <div class="hero-image">
 
-![Learning Pathways](../../images/thumbnails/thumb-nht-manager.png)
+![Learning Pathways](../../images/thumbnails/thumb-nht-manager.png " ")
 
 </div>
 
@@ -54,7 +54,7 @@ My goals for the manager experience were to provide the ability to browse availa
 
 <div class="image-wrapper max-600 border-thick">
 
-![Sketches](../../images/learning-pathways/lp-sketches.png)
+![Sketches](../../images/learning-pathways/lp-sketches.png "Sketches of dashboard concepts")
 
 </div>
 
@@ -66,7 +66,7 @@ At this point we had yet to introduce a robust person/profile object into our ap
 
 <div class="image-wrapper max-600 border-thin">
 
-![Dashboard V1](../../images/learning-pathways/v1-dashboard.png)
+![Dashboard V1](../../images/learning-pathways/v1-dashboard.png "Intital dashboard explorations (also testing custom branding extremes)")
 
 </div>
 

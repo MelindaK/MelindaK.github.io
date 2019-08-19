@@ -20,7 +20,7 @@ thumbnail: '../../images/thumbnails/thumb-notices.png'
 
 <div class="hero-image">
 
-![Inkling Notices](../../images/thumbnails/thumb-notices.png)
+![Inkling Notices](../../images/thumbnails/thumb-notices.png " ")
 
 </div>
 

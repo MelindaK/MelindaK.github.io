@@ -9,7 +9,7 @@ thumbnail: '../../images/thumbnails/thumb-parenting.png'
 
 <div class="hero-image">
 
-![Learning Pathways](../../images/thumbnails/thumb-parenting.png)
+![Parenting Coordination App](../../images/thumbnails/thumb-parenting.png " ")
 
 </div>
 

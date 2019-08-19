@@ -46,9 +46,16 @@ module.exports = {
             options: {
               maxWidth: 800,
               showCaptions: true,
+              linkImagesToOriginal: false,
             },
           },
-          "gatsby-remark-copy-linked-files",
+          {
+            resolve: `gatsby-remark-images-medium-zoom`,
+            options: {
+              background: "#000",
+            }
+          },
+          `gatsby-remark-copy-linked-files`,
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -69,8 +76,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#E03544`,
+        theme_color: `#E03544`,
         display: `minimal-ui`,
         icon: `src/images/red-head-emoji.png`, // This path is relative to the root of the site.
       },
