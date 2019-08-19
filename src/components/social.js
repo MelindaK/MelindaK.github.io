@@ -5,7 +5,7 @@ import "./sass/index.scss"
 
 const SocialLinks = () => (
   <div className="social">
-    <a alt="github link" href="https://github.com/MelindaK" target="_blank" rel="noopener noreferrer">
+    <a alt="github link" href="https://github.com/MelindaK/MelindaK.github.io" target="_blank" rel="noopener noreferrer">
       <span className="icon github"></span>
     </a>
     <a alt="mail link" href="mailto:melinda.kilner@gmail.com" target="_blank" rel="noopener noreferrer">
