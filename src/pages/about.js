@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProfileImage from "../components/profile"
+import SocialIcons from "../components/social"
 
 import "../components/sass/index.scss"
 
@@ -53,8 +54,9 @@ const About = ({ data }) => (
               <span className="attribute">Tom @ Chick-fil-A</span>
             </blockquote>
             </section>
-
           </div>
+        <SocialIcons />
+
   </div> 
 
   </Layout>

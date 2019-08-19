@@ -176,3 +176,28 @@
 	max-width: 220px;
 	margin: 0 auto
 }
+
+/* Social Links */
+
+.social {
+	display:block;
+	text-align: center;
+	margin-bottom: $margin-unit;
+
+	.icon {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		margin: 0px 10px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&.github {
+			background-image: url(../../images/social/github-mark.svg);
+		}
+		&.mail {
+			background-image: url(../../images/social/mail-mark.svg);
+		}
+	}
+}
