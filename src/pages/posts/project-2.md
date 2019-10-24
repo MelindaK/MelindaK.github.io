@@ -1,15 +1,16 @@
 ---
 path: '/parenting-app'
-title: 'An Coordination App for Working Parents'
+title: 'Coordination App for Working Parents'
 published: true
 date: '2017-12-01'
-description: 'This is a description of this post.'
+description: 'An app to help working parents stay in sync and focus on the essentials.'
 thumbnail: '../../images/thumbnails/thumb-parenting.png'
+type: 'Personal'
 ---
 
 <div class="hero-image">
 
-![Parenting Coordination App](../../images/thumbnails/thumb-parenting.png " ")
+![Parenting Coordination App](../../images/thumbnails/thumb-parenting.png "Parenting Coordination App")
 
 </div>
 
@@ -84,7 +85,7 @@ I began exploring integrating a shared "todo" list into the flow of general text
 
 <h2 id="final-p2"> Final designs</h2>
 
-![Learning Pathways](../../images/thumbnails/thumb-parenting.png " ")
+![Parenting Coordination App](../../images/thumbnails/thumb-parenting.png "Parenting Coordination App")
 
 ### Goals
 
@@ -100,7 +101,7 @@ The breakthrough for this solution came with the idea of integrating task creati
 
 <div class="image-wrapper max-600">
 
-![Chat and create tasks](../../images/parenting/uxd56-chat-create.gif " ")
+![Chat and create tasks](../../images/parenting/uxd56-chat-create.gif "Chat and create tasks")
 
 </div>
 
@@ -118,7 +119,7 @@ The second pillar of the app is the organization side, giving partners access to
 
 <div class="image-wrapper max-600">
 
-![Organize tasks](../../images/parenting/organize.png " ")
+![Organize tasks](../../images/parenting/organize.png "Organize tasks")
 
 </div>
 
@@ -135,7 +136,7 @@ When items are due, reminders appear in the flow of the messaging interface. The
 
 <div class="image-wrapper">
 
-![Chatbot reminders](../../images/parenting/chatbot-remind-complete.gif " ")
+![Chatbot reminders](../../images/parenting/chatbot-remind-complete.gif "Chatbot reminders")
 
 </div>
 
@@ -152,7 +153,7 @@ As the app would ideal become the default way for parents to communicate, I want
 
 <div class="image-wrapper">
 
-![Quick actions](../../images/parenting/quick-actions.png " ")
+![Quick actions](../../images/parenting/quick-actions.png "Quick actions")
 
 </div>
 
@@ -168,7 +169,7 @@ Everything hopefully added up to a way for partners to stay on the same page wit
 
 <div class="image-wrapper max-400">
 
-![Heart texts](../../images/parenting/final-text.png " ")
+![Heart texts](../../images/parenting/final-text.png "Heart texts")
 
 </div>
 

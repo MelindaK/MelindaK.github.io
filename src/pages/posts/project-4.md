@@ -3,13 +3,14 @@ path: '/learning-pathways'
 title: 'Learning Pathways for Field Managers'
 published: true
 date: '2019-01-01'
-description: 'This is a description of this post.'
+description: 'A tool for training managers to track and aid their employees’ learning progress.'
 thumbnail: '../../images/thumbnails/thumb-nht-manager.png'
+type: 'Case Study'
 ---
 
 <div class="hero-image">
 
-![Learning Pathways](../../images/thumbnails/thumb-nht-manager.png " ")
+![Learning Pathways](../../images/thumbnails/thumb-nht-manager.png "Learning Pathways")
 
 </div>
 
@@ -79,12 +80,12 @@ I next worked on a course report view that displayed a list of team members’ a
 <div class="grid image-grid">
 <div class="flex-item-large image-wrapper border-thin">
 
-![Course Report V1](../../images/learning-pathways/v1-course-report.png " ")
+![Course Report V1](../../images/learning-pathways/v1-course-report.png "Course Report V1 Phone")
 
 </div>
 <div class="flex-item-small image-wrapper border-thin">
 
-![Course Report V1 Phone](../../images/learning-pathways/v1-course-report-phone.png " ")
+![Course Report V1 Phone](../../images/learning-pathways/v1-course-report-phone.png "Course Report V1 Phone")
 
 </div>
 </div>
@@ -92,12 +93,12 @@ I next worked on a course report view that displayed a list of team members’ a
 
 
 Each assignment linked to a full detail view of the learner’s course record with more granular information on individual step completion and trainer sign-off.
-
+<!-- 
 <div class="image-wrapper max-600 border-thin">
 
-![Learner Detail V1](../../images/learning-pathways/v1-trainee-detail.png)
+![Learner Detail V1](../../images/learning-pathways/v1-trainee-detail.png "Learner Detail V1")
 
-</div>
+</div> -->
 
 ### Course Assignment 
 
@@ -105,7 +106,7 @@ The final piece of the puzzle was to provide managers with a way to assign a cou
 
 <div class="image-wrapper max-400 border-thick">
 
-![Assignment Sketches](../../images/learning-pathways/assignment-sketches.png)
+![Assignment Sketches](../../images/learning-pathways/assignment-sketches.png "Assignment Sketches")
 
 </div>
 
@@ -154,12 +155,12 @@ The final product was supported across our iOS and Android phone and tablet apps
 <div class="grid image-grid">
 <div class="flex-item-large image-wrapper border-thin">
 
-![Manager Dashboard Tablet](../../images/learning-pathways/team-courses-dashboard.png  " ")
+![Manager Dashboard Tablet](../../images/learning-pathways/team-courses-dashboard.png  "Manager Dashboard Tablet")
 
 </div>
 <div class="flex-item-small image-wrapper border-thin">
 
-![Manager Dashboard Phone](../../images/learning-pathways/phone-team-courses.png " ")
+![Manager Dashboard Phone](../../images/learning-pathways/phone-team-courses.png "Manager Dashboard Phone")
 
 </div>
 </div>
@@ -171,12 +172,12 @@ The final dashboard included a tab navigation bar for mangers to move between te
 <div class="grid image-grid">
 <div class="flex-item-large image-wrapper border-thin">
 
-![Course Report Tablet](../../images/learning-pathways/course-report.png " ")
+![Course Report Tablet](../../images/learning-pathways/course-report.png "Course Report Tablet")
 
 </div>
 <div class="flex-item-small image-wrapper border-thin">
 
-![Course Report Phone](../../images/learning-pathways/phone-course-report.png " ")
+![Course Report Phone](../../images/learning-pathways/phone-course-report.png "Course Report Phone")
 
 </div>
 </div>
@@ -205,7 +206,7 @@ Assignee selection included a new list of not only recently assigned, but recent
 </div>
 <div class="grid-item one-third image-wrapper border-thin">
 
-![Assignment animation](../../images/learning-pathways/assignment-live.gif)
+![Assignment animation](../../images/learning-pathways/assignment-live.gif "Assignment animation")
 
 </div>
 </div>
@@ -214,7 +215,7 @@ The assignment experience was similar across native apps and mobile web. However
 
 <div class="image-wrapper max-600">
 
-![Desktop Course Assignment](../../images/learning-pathways/desktop-assign-course.png)
+![Desktop Course Assignment](../../images/learning-pathways/desktop-assign-course.png "Desktop Course Assignment")
 
 </div>
 

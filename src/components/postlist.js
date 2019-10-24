@@ -25,6 +25,7 @@ const PostList = (props) => (
 		        path
 		        published
 		        description
+		        type
 		        thumbnail {
 	              childImageSharp {
 				    fluid(maxWidth: 500, quality: 100) {
@@ -49,7 +50,9 @@ const PostList = (props) => (
 		    		<Img fluid={post.node.frontmatter.thumbnail.childImageSharp.fluid} alt={post.node.frontmatter.title} />
 		    	</div>
 		    	<div className="post-content">
+		    		<p className="post-label">{post.node.frontmatter.type}</p>
 			    	<h4 class="title is-4">{post.node.frontmatter.title}</h4>
+			    	<p className="post-description">{post.node.frontmatter.description}</p>
 			    </div>
 		    	<Link
 		    		key={post.node.id} 

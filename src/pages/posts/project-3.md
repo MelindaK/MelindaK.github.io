@@ -3,8 +3,9 @@ path: '/inkling-notices'
 title: 'Inkling Notices'
 published: true
 date: '2018-06-01'
-description: 'Providing a way for authors to send alerts to their audiences about new documents, updated content, timely communications, or corrections.'
+description: 'Providing a way for authors to send alerts to their users about important content updates.'
 thumbnail: '../../images/thumbnails/thumb-notices.png'
+type: 'Case Study'
 ---
 
 <!-- <section class="project-nav">
@@ -20,7 +21,7 @@ thumbnail: '../../images/thumbnails/thumb-notices.png'
 
 <div class="hero-image">
 
-![Inkling Notices](../../images/thumbnails/thumb-notices.png " ")
+![Inkling Notices](../../images/thumbnails/thumb-notices.png "Inkling Notices")
 
 </div>
 
@@ -42,7 +43,7 @@ At the time, the product provided no way for users to easily understand what con
 
 <div class="image-wrapper border-thick one-half right">
 
-![Sketches](../../images/notices/notices-crazy8.jpg)
+![Sketches](../../images/notices/notices-crazy8.jpg "Sketches")
 
 </div>
 
@@ -69,12 +70,12 @@ I ran user testing sessions with prototypes for a library notification experienc
 
 <div class="image-wrapper max-600 border-thin">
 
-![Notice Authoring V1](../../images/notices/notice-authoring-v1.png)
+![Notice Authoring V1](../../images/notices/notice-authoring-v1.png "Notice Authoring V1")
 
 </div>
 <div class="image-wrapper max-600">
 
-![Notices Mobile V1](../../images/notices/mobile-notices-v1.png)
+![Notices Mobile V1](../../images/notices/mobile-notices-v1.png "Notices Mobile V1")
 
 </div>
 
@@ -91,7 +92,7 @@ The notices feature was released across desktop & mobile and our iOS and Android
 
 <div class="image-wrapper border-thin max-600">
 
-![Inking Notices Desktop](../../images/notices/inkling-notices-reader.png)
+![Inking Notices Desktop](../../images/notices/inkling-notices-reader.png "Inking Notices Desktop")
 
 </div>
 
@@ -107,7 +108,7 @@ On the notice creation side, I chose to separate each required input into a disc
 
 <div class="image-wrapper max-600 border-thin">
 
-![Notices Authoring](../../images/notices/author-title-message.png)
+![Notices Authoring](../../images/notices/author-title-message.png "Notices Authoring")
 
 </div>
 
@@ -115,7 +116,7 @@ The document selection interface, where an author can choose from a list of publ
 
 <div class="image-wrapper max-600 border-thin">
 
-![Linking a Document](../../images/notices/document-select.png)
+![Linking a Document](../../images/notices/document-select.png "Linking a Document")
 
 </div>
 
@@ -123,7 +124,7 @@ A key design of authoring experience was the notice preview. Given a author's ab
 
 <div class="image-wrapper max-600 border-thin">
 
-![Live Preview](../../images/notices/notice-authoring.gif)
+![Live Preview](../../images/notices/notice-authoring.gif "Live Preview")
 
 </div>
 
@@ -134,7 +135,7 @@ The notices dashboard in the authoring environment aim to provide a centralized 
 
 <div class="image-wrapper max-600 border-thin">
 
-![Notices Dashboard (Authoring)](../../images/notices/dashboard.png)
+![Notices Dashboard (Authoring)](../../images/notices/dashboard.png "Notices Dashboard (Authoring)")
 
 </div>
 
