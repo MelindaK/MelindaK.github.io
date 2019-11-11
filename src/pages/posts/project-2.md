@@ -18,7 +18,7 @@ type: 'Personal'
 
 <!-- <p style="text-align:center;">Coming soon</p> -->
 
-The following was my final project for a UX boot-camp, and something I still hope to make real one day... :).
+The following is a personal project I worked on during a UX boot-camp, and something I would still love to see developed one day!
 
 ## Research
 
@@ -61,12 +61,12 @@ I was excited by my first concept — what if you had an app that essentially cr
 
 </div>
 
-Once I talked to parents, I immediately threw out this idea. The amount of upfront work required to create the daily schedule completely invalidated its potential usefulness. Additionally, flexibility was essential when whole days could be thrown off by a sick kid or a last-minute work emergency. Having a rigid timeline that pinged you about overdue items if you needed to shuffle your day would surely lead to even more frustration. 
+As soon as I ran this by parents, however, I threw out this idea. The amount of upfront work required to create the daily schedule completely invalidated its potential usefulness. Additionally, flexibility was essential when whole days could be thrown off by a sick kid or a last-minute work emergency. Having a rigid timeline that pinged you about overdue items if you needed to shuffle your day would surely lead to even more frustration. 
 
 
 
 
-However, the whole issue of heavy setup work was a valuable insight, and I shifted thinking about the following:
+But the whole issue of heavy setup work was a valuable insight, and I shifted thinking about the following:
   - How could the "organization" aspect of parenting tasks take place naturally in the course of existing behavior
   - Could a tool smartly predict tasks and do some of that work for them?
   - How could tasks be shared without one parent telling the other one what to do?

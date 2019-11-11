@@ -53,9 +53,9 @@ Our research and work with restaurant and retail companies led us to the followi
 
 My goals for the manager experience were to provide the ability to browse available courses and assign them to team members, to see an overview of the trainings in progress, and to view the specific progress or record of a team member on a given course.
 
-<div class="image-wrapper max-600 border-thick">
+<div class="image-wrapper ">
 
-![Sketches](../../images/learning-pathways/lp-sketches.png "Sketches of dashboard concepts")
+![Sketches](../../images/learning-pathways/courses-wires.jpeg "Wires of manager concepts")
 
 </div>
 
@@ -125,6 +125,12 @@ Including the ability to select multiple courses or assign to multiple people wh
 ## User Testing and Design Iteration
 
 Our user testing included internal experience testing, remote sessions with existing customers, and formal in-person testing scenarios with external participants to mimic the restaurant environment when using the software.
+
+<div class="image-wrapper ">
+
+![User testing](../../images/learning-pathways/user-testing-courses.jpg "User testing")
+
+</div>
 
 Some insights and changes I made to the manager experience:
 

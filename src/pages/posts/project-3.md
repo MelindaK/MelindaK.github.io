@@ -35,20 +35,21 @@ At the time, the product provided no way for users to easily understand what con
 
 ## Problem statements
 
-- As an Inkling Knowledge user, I need to know about important content updates and have an easy mechanism of reviewing updated content.
-- As a content publisher, I need a mechanism to push relevant new or updated content to targeted users, and have visibility into whether they have read it.
+- As an Inkling Knowledge user I need to know about important document updates and have an easy way to review new content.
+- As a content publisher, I need a way to alert users about important new or updated content and have visibility into whether or not they have seen the update.
 
 
 ## Discovery & Ideation
 
-<div class="image-wrapper border-thick one-half right">
 
-![Sketches](../../images/notices/notices-crazy8.jpg "Sketches")
+<div class="image-wrapper one-half right">
+
+![Authoring Wires](../../images/notices/authoring-wires.png "Authoring Wires")
 
 </div>
 
 
-The project team — which included a Design lead (myself), PM, and an Engineering lead -- explored a variety of possible options up during the discovery phase:
+The project team — which included a Design lead (myself), PM, and an Engineering lead — explored a variety of solution candidates for both the authoring and end-user experiences:
 
 #### Automated updates
 While this would alleviate work for the content creator, automated notifications about content updates ultimately did not solve our customers needs. Authors did not want their users spammed with notifications about every typo correction, but rather wanted to send targeted messages about key changes along with specific action items for their audience. 
@@ -59,23 +60,25 @@ Another possibility was to have content creators write a release message when th
 #### Centralized notices
 Providing a central place for authors to create and track content updated notices related to any document ultimately felt like the right approach. This would map to a notices center at the library level on the end-user's side, where they could see a list of all important updates.
 
+![Library Notices Concepts](../../images/notices/lib-notices-concepts.png "Library Notices Concepts")
+
 
 ## User Testing
 
 I ran user testing sessions with prototypes for a library notification experience and "notice" authoring experience with both novices and existing Inkling users. These were a few key takeaways: 
 
-1. I quickly learned that it was best to stick with common notification center patterns. Users easily recognized a badged bell icon, but were less sure when seeing something like a bullhorn or directly badged documents. 
-2. I initially intended to restrict the text input for notice authors as we theorized that push notifications would be a frequent way users would link to the updated content. However this led to frustration from authors who hoped to add more context around the importance an update.
-3. Our language around the "Revoke" action (a way to remove a notice from users' view) felt aggressive and scary to authors. We opted to change the action to "Expire" and to provide a default expiration window.
+1. It was best to stick with common notification center patterns. Users easily recognized a badged bell icon, but were less sure when seeing something like a bullhorn or directly badged documents. 
+2. While I initially intended to restrict the text input for notice authors as we theorized that push notifications would be a frequent way users would link to the updated content, this led to frustration from authors who hoped to add more context around the importance an update.
+3. Our language around a "Revoke" action (a way to remove a notice) felt aggressive and scary to authors. We opted to change the action to "Expire" and to provide a default expiration window.
 
 <div class="image-wrapper max-600 border-thin">
 
-![Notice Authoring V1](../../images/notices/notice-authoring-v1.png "Notice Authoring V1")
+![Notice Authoring V1](../../images/notices/notice-authoring-v1.png "Notice Authoring Testing")
 
 </div>
-<div class="image-wrapper max-600">
+<div class="image-wrapper max-400">
 
-![Notices Mobile V1](../../images/notices/mobile-notices-v1.png "Notices Mobile V1")
+![Notices Mobile V1](../../images/notices/mobile-notices.png "Notices Mobile Testing")
 
 </div>
 
@@ -88,7 +91,7 @@ The final designs for the library leveraged the familiarity of a notification ce
 
 The detail view gave the author a place to provide context on the relevance of the update or required action on the part of the user. It also left the door open to new types of messaging in the future.
 
-The notices feature was released across desktop & mobile and our iOS and Android apps.
+The notices feature was released across desktop & mobile web, followed by our iOS and Android apps.
 
 <div class="image-wrapper border-thin max-600">
 
