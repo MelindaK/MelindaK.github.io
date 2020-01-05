@@ -2,7 +2,7 @@
 path: '/inkling-notices'
 title: 'Inkling Notices'
 published: true
-date: '2018-06-01'
+date: '04'
 description: 'Providing a way for authors to send alerts to their users about important content updates.'
 thumbnail: '../../images/thumbnails/thumb-notices.png'
 type: 'Case Study'

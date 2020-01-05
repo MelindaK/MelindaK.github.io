@@ -2,7 +2,7 @@
 path: '/parenting-app'
 title: 'Coordination App for Working Parents'
 published: true
-date: '2017-12-01'
+date: '01'
 description: 'An app to help working parents stay in sync and focus on the essentials.'
 thumbnail: '../../images/thumbnails/thumb-parenting.png'
 type: 'Personal'

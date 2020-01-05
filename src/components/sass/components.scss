@@ -97,27 +97,27 @@
 	transition: 300ms;
 	box-shadow: 0 37.125px 70px -10.125px rgba(0,0,0,0.1);
 
-	&:nth-of-type(1) {
+	&:nth-of-type(4n+1) {
 		.post-thumbnail {
 			background-color: $color1;
 			transition: 1000ms;
 		}
 	}
-	&:nth-of-type(2) {
+	&:nth-of-type(4n+2) {
 		.post-thumbnail {
 			background-color: $color2;
 			transition: 1000ms;
 		}
 	}
-	&:nth-of-type(3) {
+	&:nth-of-type(4n+3) {
 		.post-thumbnail {
-			background-color: $color3;
+			background-color: $color4;
 			transition: 1000ms;
 		}
 	}
-	&:nth-of-type(4) {
+	&:nth-of-type(4n+4) {
 		.post-thumbnail {
-			background-color: $color4;
+			background-color: $color3;
 			transition: 1000ms;
 		}
 	}

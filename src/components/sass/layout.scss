@@ -41,6 +41,15 @@
 		margin: 0 auto;
 	}
 
+	&.grid-3 {
+
+		@include respond($screen-sm) {
+			> * {
+				width: 32%;
+			}
+		}
+	}
+
 	.grid-item {
 		&:nth-of-type(1) {
 			padding-right: 20px;
@@ -67,10 +76,9 @@
 	width: 90%;
 	margin: 0 auto;
 	@include respond($screen-sm) {
-		width: 34%;
+		width: 33.3%;
 	}
 }
-
 .one-half {
 	width: 100%;
 	@include respond($screen-md) {
@@ -82,7 +90,7 @@
 .two-thirds {
 	width: 100%;
 	@include respond($screen-md) {
-		width: 66%;
+		width: 66.6%;
 	}
 }
 

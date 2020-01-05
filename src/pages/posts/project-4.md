@@ -2,7 +2,7 @@
 path: '/learning-pathways'
 title: 'Learning Pathways for Field Managers'
 published: true
-date: '2019-01-01'
+date: '05'
 description: 'A tool for training managers to track and aid their employees’ learning progress.'
 thumbnail: '../../images/thumbnails/thumb-nht-manager.png'
 type: 'Case Study'

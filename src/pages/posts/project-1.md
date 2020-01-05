@@ -2,7 +2,7 @@
 path: '/authoring-templates'
 title: 'Custom Authoring Templates'
 published: true
-date: '2018-01-01'
+date: '02'
 description: 'Design and development of scaleable, digital templates for learning content.'
 thumbnail: '../../images/thumbnails/thumb-content-logos.png'
 type: 'Front-End Design'
