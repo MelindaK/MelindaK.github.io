@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import ProfileImage from "../components/profile"
 import SocialIcons from "../components/social"
 
+
 import "../components/sass/index.scss"
 
 const About = ({ data }) => (
@@ -23,15 +24,15 @@ const About = ({ data }) => (
       </section>
         <div className="content">
             <h3>Nice to meet you! <span role="img" aria-label="wave">👋</span> </h3>
-          <p>I'm Melinda. I landed in the Bay Area in 2006 after a somewhat nomadic lifestyle and felt like I'd found my place. It's been the perfect home base to continue to indulge my travel bug (I'm up to 32 countries but who's counting) knowing I have this wonderful weird city waiting for me. I've leaned into the San Francisco lifestyle by taking up sourdough bread baking - my favorite hobby because it results in eating and sharing a lot of warm, fresh, loaves of bread (...and pizza, and bagels, and sourdough pancakes). It pairs nicely with my podcast addiction (I might have a full spreadsheet of recommendations...), urban hikes (with great hills come the best views), and making custom slack emoji.</p>
+          <p>I'm Melinda. I landed in the Bay Area in 2006 after a somewhat nomadic lifestyle and felt like I'd found my place. It's been the perfect base to continue to indulge my travel bug (I'm up to 32 countries!) knowing I have this wonderful weird city waiting for me back home. I've leaned into the San Francisco lifestyle by taking up sourdough bread baking - currently my favorite hobby as it results in eating and sharing a lot of warm, fresh, loaves of bread (...and pizza, and bagels, and sourdough pancakes). It pairs nicely with my podcast addiction (I might have a full spreadsheet of recommendations...), urban hikes (with great hills come the best views), and ever-growing piles of books around my apartment.</p>
         </div>
         <div className="content">
           <h3>But back to design... <span role="img" aria-label="artist palette">🎨</span></h3>
-          <p>I've always felt a fairly constant tug between wanting to immerse myself in <b>how</b> to do something—to execute, build, create—and being excited by wholy new ideas, new problems to solve, new ways of thinking. I can still remember what it felt like to write my first lines of CSS—both satisfying in itself and full of future potential. It was the same feeling I had when I discovered UX design—a field with an endless stream of problems to tackle, where the work necessitates not already knowing the answer, having to both think broadly and craft with precision. I feel fortunate to work in a space that is constantly evolving, both in the large sense of how people interact with technology, and in the tools available to build with. The perpetual student in me revels in digging into the latest prototyping tools (currently looking at you, FramerX) or teaching myself React to build this website!</p>
+          <p>I originally came to UX from a background in front-end design and development. I've always felt a fairly constant tug between wanting to immerse myself in <b>how</b> to do something—to execute, build, create—and being excited by wholly new ideas, new problems to solve, new ways of thinking. I can still remember what it felt like to write my first lines of CSS—both satisfying in itself and full of future potential. It was the same feeling I had when I first discovered UX design, a field with an endless stream of problems to tackle, where the work necessitates not already knowing the answer, having to both think broadly and craft with precision. I feel fortunate to work in a space that is constantly evolving, both in the large sense of how people interact with technology, and in the tools available to build with. The perpetual student in me revels in digging into the latest prototyping and design tools or going back to my coding days and teaching myself React to build this website!</p>
         </div>
         <div className="content">
           <h3>Aw, shucks <span role="img" aria-label="happy face">😊</span></h3>
-          <p>Nothing makes work more rewarding than knowing I've positively impacted others. Some very kind people have said some nice things about me, so I'm sharing some of that here:</p>
+          <p>Nothing makes work more rewarding than knowing I've positively impacted my teammates or people using the products I've helped design. Some very kind people have said some nice things about me, so I'm sharing some of that here:</p>
           <section className="section-quote">
             <blockquote>
               <p>“Melinda is generally recognized as one of the most competent, informed, and thoughtful people on the UX team, if not the broader company. People mention her ability to juggle multiple responsibilities, being proactive and helpful wherever possible, and tailoring her solutions to meet real and specific needs based on feedback and compromise.”</p>
